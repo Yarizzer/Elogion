@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		715F7D1429F77E630006B0EC /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D1329F77E630006B0EC /* AppRouter.swift */; };
 		715F7D1729F77FFF0006B0EC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D1629F77FFF0006B0EC /* BaseViewController.swift */; };
+		715F7D1929F781070006B0EC /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D1829F781070006B0EC /* NibLoadableView.swift */; };
 		7176EA5329F77A25001C0F39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176EA5229F77A25001C0F39 /* AppDelegate.swift */; };
 		7176EA5D29F77A25001C0F39 /* Elogion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7176EA5B29F77A25001C0F39 /* Elogion.xcdatamodeld */; };
 		7176EA5F29F77A25001C0F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7176EA5E29F77A25001C0F39 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		715F7D1329F77E630006B0EC /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		715F7D1629F77FFF0006B0EC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		715F7D1829F781070006B0EC /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		7176EA4F29F77A24001C0F39 /* Elogion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elogion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7176EA5229F77A25001C0F39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7176EA5C29F77A25001C0F39 /* Elogion.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Elogion.xcdatamodel; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				715F7D1629F77FFF0006B0EC /* BaseViewController.swift */,
+				715F7D1829F781070006B0EC /* NibLoadableView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7176EA5D29F77A25001C0F39 /* Elogion.xcdatamodeld in Sources */,
+				715F7D1929F781070006B0EC /* NibLoadableView.swift in Sources */,
 				715F7D1729F77FFF0006B0EC /* BaseViewController.swift in Sources */,
 				7176EA5329F77A25001C0F39 /* AppDelegate.swift in Sources */,
 				715F7D1429F77E630006B0EC /* AppRouter.swift in Sources */,
