@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7176EA5329F77A25001C0F39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176EA5229F77A25001C0F39 /* AppDelegate.swift */; };
-		7176EA5529F77A25001C0F39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176EA5429F77A25001C0F39 /* SceneDelegate.swift */; };
-		7176EA5729F77A25001C0F39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176EA5629F77A25001C0F39 /* ViewController.swift */; };
-		7176EA5A29F77A25001C0F39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7176EA5829F77A25001C0F39 /* Main.storyboard */; };
 		7176EA5D29F77A25001C0F39 /* Elogion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7176EA5B29F77A25001C0F39 /* Elogion.xcdatamodeld */; };
 		7176EA5F29F77A25001C0F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7176EA5E29F77A25001C0F39 /* Assets.xcassets */; };
 		7176EA6229F77A25001C0F39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7176EA6029F77A25001C0F39 /* LaunchScreen.storyboard */; };
@@ -19,9 +16,6 @@
 /* Begin PBXFileReference section */
 		7176EA4F29F77A24001C0F39 /* Elogion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elogion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7176EA5229F77A25001C0F39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7176EA5429F77A25001C0F39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7176EA5629F77A25001C0F39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7176EA5929F77A25001C0F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7176EA5C29F77A25001C0F39 /* Elogion.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Elogion.xcdatamodel; sourceTree = "<group>"; };
 		7176EA5E29F77A25001C0F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7176EA6129F77A25001C0F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,16 +52,61 @@
 		7176EA5129F77A24001C0F39 /* Elogion */ = {
 			isa = PBXGroup;
 			children = (
-				7176EA5229F77A25001C0F39 /* AppDelegate.swift */,
-				7176EA5429F77A25001C0F39 /* SceneDelegate.swift */,
-				7176EA5629F77A25001C0F39 /* ViewController.swift */,
-				7176EA5829F77A25001C0F39 /* Main.storyboard */,
-				7176EA5E29F77A25001C0F39 /* Assets.xcassets */,
-				7176EA6029F77A25001C0F39 /* LaunchScreen.storyboard */,
-				7176EA6329F77A25001C0F39 /* Info.plist */,
-				7176EA5B29F77A25001C0F39 /* Elogion.xcdatamodeld */,
+				7176EA6929F77CE1001C0F39 /* Application */,
+				7176EA6B29F77CFB001C0F39 /* SourceFiles */,
+				7176EA6E29F77D37001C0F39 /* SupportingFiles */,
+				7176EA6C29F77D03001C0F39 /* LaunchScreen */,
+				7176EA6D29F77D0C001C0F39 /* Storage */,
 			);
 			path = Elogion;
+			sourceTree = "<group>";
+		};
+		7176EA6929F77CE1001C0F39 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7176EA6A29F77CE9001C0F39 /* AppDelegate */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		7176EA6A29F77CE9001C0F39 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				7176EA5229F77A25001C0F39 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		7176EA6B29F77CFB001C0F39 /* SourceFiles */ = {
+			isa = PBXGroup;
+			children = (
+				7176EA5E29F77A25001C0F39 /* Assets.xcassets */,
+			);
+			path = SourceFiles;
+			sourceTree = "<group>";
+		};
+		7176EA6C29F77D03001C0F39 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7176EA6029F77A25001C0F39 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		7176EA6D29F77D0C001C0F39 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				7176EA5B29F77A25001C0F39 /* Elogion.xcdatamodeld */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		7176EA6E29F77D37001C0F39 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				7176EA6329F77A25001C0F39 /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +169,6 @@
 			files = (
 				7176EA6229F77A25001C0F39 /* LaunchScreen.storyboard in Resources */,
 				7176EA5F29F77A25001C0F39 /* Assets.xcassets in Resources */,
-				7176EA5A29F77A25001C0F39 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7176EA5729F77A25001C0F39 /* ViewController.swift in Sources */,
 				7176EA5D29F77A25001C0F39 /* Elogion.xcdatamodeld in Sources */,
 				7176EA5329F77A25001C0F39 /* AppDelegate.swift in Sources */,
-				7176EA5529F77A25001C0F39 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7176EA5829F77A25001C0F39 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7176EA5929F77A25001C0F39 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7176EA6029F77A25001C0F39 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,12 +321,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 54L37Y4QC4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Elogion/Info.plist;
+				INFOPLIST_FILE = Elogion/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Elogion;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +335,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yarizzer.Elogion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,12 +353,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 54L37Y4QC4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Elogion/Info.plist;
+				INFOPLIST_FILE = Elogion/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Elogion;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,6 +367,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yarizzer.Elogion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
