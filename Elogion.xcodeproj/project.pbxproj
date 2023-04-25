@@ -22,6 +22,19 @@
 		715F7D3129F781660006B0EC /* InitialSceneViewControllerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D2529F781660006B0EC /* InitialSceneViewControllerContract.swift */; };
 		715F7D3229F781660006B0EC /* InitialScenePresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D2629F781660006B0EC /* InitialScenePresenterContract.swift */; };
 		715F7D3329F781660006B0EC /* InitialScenePresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D2729F781660006B0EC /* InitialScenePresenterService.swift */; };
+		715F7D3D29F782FD0006B0EC /* BlurTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D3C29F782FD0006B0EC /* BlurTransitionAnimator.swift */; };
+		715F7D4029F79C5E0006B0EC /* AppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D3F29F79C5E0006B0EC /* AppCore.swift */; };
+		715F7D4229F79CE30006B0EC /* AppCoreContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D4129F79CE30006B0EC /* AppCoreContract.swift */; };
+		715F7D4829F79DD70006B0EC /* AppDataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D4729F79DD70006B0EC /* AppDataLayer.swift */; };
+		715F7D4A29F79DF10006B0EC /* AppDataLayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D4929F79DF10006B0EC /* AppDataLayerType.swift */; };
+		715F7D4C29F79E0D0006B0EC /* AppUILayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D4B29F79E0D0006B0EC /* AppUILayer.swift */; };
+		715F7D4E29F79E340006B0EC /* AppUILayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D4D29F79E340006B0EC /* AppUILayerType.swift */; };
+		715F7D5029F79E5D0006B0EC /* AppAILayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D4F29F79E5D0006B0EC /* AppAILayer.swift */; };
+		715F7D5229F79E710006B0EC /* AppAILayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D5129F79E710006B0EC /* AppAILayerType.swift */; };
+		715F7D5629F79F5A0006B0EC /* AppUILayerStyleServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D5529F79F5A0006B0EC /* AppUILayerStyleServiceType.swift */; };
+		715F7D5829F7A5AF0006B0EC /* AppUILayerStyleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D5729F7A5AF0006B0EC /* AppUILayerStyleService.swift */; };
+		715F7D5B29F7A85C0006B0EC /* AppUILayerDeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D5A29F7A85C0006B0EC /* AppUILayerDeviceService.swift */; };
+		715F7D5D29F7A88B0006B0EC /* AppUILayerDeviceServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D5C29F7A88B0006B0EC /* AppUILayerDeviceServiceType.swift */; };
 		7176EA5329F77A25001C0F39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176EA5229F77A25001C0F39 /* AppDelegate.swift */; };
 		7176EA5D29F77A25001C0F39 /* Elogion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7176EA5B29F77A25001C0F39 /* Elogion.xcdatamodeld */; };
 		7176EA5F29F77A25001C0F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7176EA5E29F77A25001C0F39 /* Assets.xcassets */; };
@@ -44,6 +57,19 @@
 		715F7D2529F781660006B0EC /* InitialSceneViewControllerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSceneViewControllerContract.swift; sourceTree = "<group>"; };
 		715F7D2629F781660006B0EC /* InitialScenePresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScenePresenterContract.swift; sourceTree = "<group>"; };
 		715F7D2729F781660006B0EC /* InitialScenePresenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScenePresenterService.swift; sourceTree = "<group>"; };
+		715F7D3C29F782FD0006B0EC /* BlurTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurTransitionAnimator.swift; sourceTree = "<group>"; };
+		715F7D3F29F79C5E0006B0EC /* AppCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCore.swift; sourceTree = "<group>"; };
+		715F7D4129F79CE30006B0EC /* AppCoreContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreContract.swift; sourceTree = "<group>"; };
+		715F7D4729F79DD70006B0EC /* AppDataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataLayer.swift; sourceTree = "<group>"; };
+		715F7D4929F79DF10006B0EC /* AppDataLayerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataLayerType.swift; sourceTree = "<group>"; };
+		715F7D4B29F79E0D0006B0EC /* AppUILayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayer.swift; sourceTree = "<group>"; };
+		715F7D4D29F79E340006B0EC /* AppUILayerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerType.swift; sourceTree = "<group>"; };
+		715F7D4F29F79E5D0006B0EC /* AppAILayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAILayer.swift; sourceTree = "<group>"; };
+		715F7D5129F79E710006B0EC /* AppAILayerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAILayerType.swift; sourceTree = "<group>"; };
+		715F7D5529F79F5A0006B0EC /* AppUILayerStyleServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerStyleServiceType.swift; sourceTree = "<group>"; };
+		715F7D5729F7A5AF0006B0EC /* AppUILayerStyleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerStyleService.swift; sourceTree = "<group>"; };
+		715F7D5A29F7A85C0006B0EC /* AppUILayerDeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerDeviceService.swift; sourceTree = "<group>"; };
+		715F7D5C29F7A88B0006B0EC /* AppUILayerDeviceServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUILayerDeviceServiceType.swift; sourceTree = "<group>"; };
 		7176EA4F29F77A24001C0F39 /* Elogion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elogion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7176EA5229F77A25001C0F39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7176EA5C29F77A25001C0F39 /* Elogion.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Elogion.xcdatamodel; sourceTree = "<group>"; };
@@ -74,6 +100,7 @@
 		715F7D1529F77FEA0006B0EC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				715F7D3B29F782DD0006B0EC /* SceneTransitions */,
 				715F7D1629F77FFF0006B0EC /* BaseViewController.swift */,
 				715F7D1829F781070006B0EC /* NibLoadableView.swift */,
 			);
@@ -163,6 +190,89 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		715F7D3B29F782DD0006B0EC /* SceneTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				715F7D3C29F782FD0006B0EC /* BlurTransitionAnimator.swift */,
+			);
+			path = SceneTransitions;
+			sourceTree = "<group>";
+		};
+		715F7D3E29F7831E0006B0EC /* AppCore */ = {
+			isa = PBXGroup;
+			children = (
+				715F7D4329F79D4E0006B0EC /* Layers */,
+				715F7D3F29F79C5E0006B0EC /* AppCore.swift */,
+				715F7D4129F79CE30006B0EC /* AppCoreContract.swift */,
+			);
+			path = AppCore;
+			sourceTree = "<group>";
+		};
+		715F7D4329F79D4E0006B0EC /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				715F7D4629F79D8B0006B0EC /* AILayer */,
+				715F7D4529F79D7C0006B0EC /* UILayer */,
+				715F7D4429F79D740006B0EC /* DataLayer */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		715F7D4429F79D740006B0EC /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				715F7D4729F79DD70006B0EC /* AppDataLayer.swift */,
+				715F7D4929F79DF10006B0EC /* AppDataLayerType.swift */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		715F7D4529F79D7C0006B0EC /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				715F7D5329F79F2C0006B0EC /* Services */,
+				715F7D4B29F79E0D0006B0EC /* AppUILayer.swift */,
+				715F7D4D29F79E340006B0EC /* AppUILayerType.swift */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		715F7D4629F79D8B0006B0EC /* AILayer */ = {
+			isa = PBXGroup;
+			children = (
+				715F7D4F29F79E5D0006B0EC /* AppAILayer.swift */,
+				715F7D5129F79E710006B0EC /* AppAILayerType.swift */,
+			);
+			path = AILayer;
+			sourceTree = "<group>";
+		};
+		715F7D5329F79F2C0006B0EC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				715F7D5929F7A8400006B0EC /* Device */,
+				715F7D5429F79F400006B0EC /* Style */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		715F7D5429F79F400006B0EC /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				715F7D5529F79F5A0006B0EC /* AppUILayerStyleServiceType.swift */,
+				715F7D5729F7A5AF0006B0EC /* AppUILayerStyleService.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		715F7D5929F7A8400006B0EC /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				715F7D5A29F7A85C0006B0EC /* AppUILayerDeviceService.swift */,
+				715F7D5C29F7A88B0006B0EC /* AppUILayerDeviceServiceType.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
 		7176EA4629F77A24001C0F39 = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +308,7 @@
 			children = (
 				715F7D1229F77E4F0006B0EC /* AppRouter */,
 				7176EA6A29F77CE9001C0F39 /* AppDelegate */,
+				715F7D3E29F7831E0006B0EC /* AppCore */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -313,20 +424,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				715F7D4029F79C5E0006B0EC /* AppCore.swift in Sources */,
 				715F7D2E29F781660006B0EC /* InitialSceneInteractorContract.swift in Sources */,
+				715F7D5D29F7A88B0006B0EC /* AppUILayerDeviceServiceType.swift in Sources */,
+				715F7D4E29F79E340006B0EC /* AppUILayerType.swift in Sources */,
 				7176EA5D29F77A25001C0F39 /* Elogion.xcdatamodeld in Sources */,
+				715F7D5229F79E710006B0EC /* AppAILayerType.swift in Sources */,
 				715F7D3129F781660006B0EC /* InitialSceneViewControllerContract.swift in Sources */,
 				715F7D1929F781070006B0EC /* NibLoadableView.swift in Sources */,
+				715F7D3D29F782FD0006B0EC /* BlurTransitionAnimator.swift in Sources */,
 				715F7D3229F781660006B0EC /* InitialScenePresenterContract.swift in Sources */,
 				715F7D1729F77FFF0006B0EC /* BaseViewController.swift in Sources */,
 				715F7D3329F781660006B0EC /* InitialScenePresenterService.swift in Sources */,
+				715F7D4829F79DD70006B0EC /* AppDataLayer.swift in Sources */,
+				715F7D5029F79E5D0006B0EC /* AppAILayer.swift in Sources */,
 				7176EA5329F77A25001C0F39 /* AppDelegate.swift in Sources */,
 				715F7D2A29F781660006B0EC /* InitialSceneRouter.swift in Sources */,
+				715F7D5829F7A5AF0006B0EC /* AppUILayerStyleService.swift in Sources */,
 				715F7D2D29F781660006B0EC /* InitialSceneInteractorService.swift in Sources */,
 				715F7D2829F781660006B0EC /* InitialScenePresenter.swift in Sources */,
 				715F7D2B29F781660006B0EC /* InitialSceneViewController.swift in Sources */,
+				715F7D5629F79F5A0006B0EC /* AppUILayerStyleServiceType.swift in Sources */,
+				715F7D4C29F79E0D0006B0EC /* AppUILayer.swift in Sources */,
 				715F7D1429F77E630006B0EC /* AppRouter.swift in Sources */,
+				715F7D4A29F79DF10006B0EC /* AppDataLayerType.swift in Sources */,
 				715F7D2F29F781660006B0EC /* InitialSceneViewModel.swift in Sources */,
+				715F7D4229F79CE30006B0EC /* AppCoreContract.swift in Sources */,
+				715F7D5B29F7A85C0006B0EC /* AppUILayerDeviceService.swift in Sources */,
 				715F7D2C29F781660006B0EC /* InitialSceneInteractor.swift in Sources */,
 				715F7D2929F781660006B0EC /* InitialSceneRouterContract.swift in Sources */,
 			);
