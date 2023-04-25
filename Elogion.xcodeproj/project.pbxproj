@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		715F7D1429F77E630006B0EC /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D1329F77E630006B0EC /* AppRouter.swift */; };
 		7176EA5329F77A25001C0F39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176EA5229F77A25001C0F39 /* AppDelegate.swift */; };
 		7176EA5D29F77A25001C0F39 /* Elogion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7176EA5B29F77A25001C0F39 /* Elogion.xcdatamodeld */; };
 		7176EA5F29F77A25001C0F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7176EA5E29F77A25001C0F39 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		715F7D1329F77E630006B0EC /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		7176EA4F29F77A24001C0F39 /* Elogion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elogion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7176EA5229F77A25001C0F39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7176EA5C29F77A25001C0F39 /* Elogion.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Elogion.xcdatamodel; sourceTree = "<group>"; };
@@ -33,6 +35,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		715F7D1229F77E4F0006B0EC /* AppRouter */ = {
+			isa = PBXGroup;
+			children = (
+				715F7D1329F77E630006B0EC /* AppRouter.swift */,
+			);
+			path = AppRouter;
+			sourceTree = "<group>";
+		};
 		7176EA4629F77A24001C0F39 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 		7176EA6929F77CE1001C0F39 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				715F7D1229F77E4F0006B0EC /* AppRouter */,
 				7176EA6A29F77CE9001C0F39 /* AppDelegate */,
 			);
 			path = Application;
@@ -181,6 +192,7 @@
 			files = (
 				7176EA5D29F77A25001C0F39 /* Elogion.xcdatamodeld in Sources */,
 				7176EA5329F77A25001C0F39 /* AppDelegate.swift in Sources */,
+				715F7D1429F77E630006B0EC /* AppRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
