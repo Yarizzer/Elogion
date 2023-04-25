@@ -7,11 +7,11 @@
 //
 
 protocol InitialScenePresentable {
-    func response(responseType: InitialScenePresenterResponse.InitialSceneResponseType)
+    func response(responseType: InitialScenePresenterResponse.ResponseType)
 }
 
 struct InitialScenePresenterResponse {
-	enum InitialSceneResponseType {
+	enum ResponseType {
 		case initialSetup
 		case drainView
 	}

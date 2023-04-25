@@ -17,7 +17,7 @@ class InitialScenePresenter {
 }
 
 extension InitialScenePresenter: InitialScenePresentable {
-	func response(responseType: InitialScenePresenterResponse.InitialSceneResponseType) {
+	func response(responseType: InitialScenePresenterResponse.ResponseType) {
 		let model = service.model
 		
 		switch responseType {

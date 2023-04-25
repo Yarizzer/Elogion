@@ -7,6 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		710E58D829F83ED20077399D /* MainSceneTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E58D729F83ED20077399D /* MainSceneTabBarItem.swift */; };
+		711F7F6C29F7D0420015A16C /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7F6B29F7D0420015A16C /* TabBarRouter.swift */; };
+		711F7F9629F7E5800015A16C /* PlaceholderSceneToDeletePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7F8A29F7E5800015A16C /* PlaceholderSceneToDeletePresenter.swift */; };
+		711F7F9729F7E5800015A16C /* PlaceholderSceneToDeleteRouterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7F8B29F7E5800015A16C /* PlaceholderSceneToDeleteRouterContract.swift */; };
+		711F7F9829F7E5800015A16C /* PlaceholderSceneToDeleteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7F8C29F7E5800015A16C /* PlaceholderSceneToDeleteRouter.swift */; };
+		711F7F9929F7E5800015A16C /* PlaceholderSceneToDeleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7F8D29F7E5800015A16C /* PlaceholderSceneToDeleteViewController.swift */; };
+		711F7F9A29F7E5810015A16C /* PlaceholderSceneToDeleteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7F8E29F7E5800015A16C /* PlaceholderSceneToDeleteInteractor.swift */; };
+		711F7F9B29F7E5810015A16C /* PlaceholderSceneToDeleteInteractorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7F8F29F7E5800015A16C /* PlaceholderSceneToDeleteInteractorService.swift */; };
+		711F7F9C29F7E5810015A16C /* PlaceholderSceneToDeleteInteractorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7F9029F7E5800015A16C /* PlaceholderSceneToDeleteInteractorContract.swift */; };
+		711F7F9D29F7E5810015A16C /* PlaceholderSceneToDeleteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7F9129F7E5800015A16C /* PlaceholderSceneToDeleteViewModel.swift */; };
+		711F7F9E29F7E5810015A16C /* PlaceholderSceneToDeleteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 711F7F9229F7E5800015A16C /* PlaceholderSceneToDeleteViewController.xib */; };
+		711F7F9F29F7E5810015A16C /* PlaceholderSceneToDeleteViewControllerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7F9329F7E5800015A16C /* PlaceholderSceneToDeleteViewControllerContract.swift */; };
+		711F7FA029F7E5810015A16C /* PlaceholderSceneToDeletePresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7F9429F7E5800015A16C /* PlaceholderSceneToDeletePresenterContract.swift */; };
+		711F7FA129F7E5810015A16C /* PlaceholderSceneToDeletePresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7F9529F7E5800015A16C /* PlaceholderSceneToDeletePresenterService.swift */; };
+		711F7FAF29F7E7CB0015A16C /* MainScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7FA329F7E7CB0015A16C /* MainScenePresenter.swift */; };
+		711F7FB029F7E7CB0015A16C /* MainSceneRouterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7FA429F7E7CB0015A16C /* MainSceneRouterContract.swift */; };
+		711F7FB129F7E7CB0015A16C /* MainSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7FA529F7E7CB0015A16C /* MainSceneRouter.swift */; };
+		711F7FB229F7E7CB0015A16C /* MainSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7FA629F7E7CB0015A16C /* MainSceneViewController.swift */; };
+		711F7FB329F7E7CB0015A16C /* MainSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7FA729F7E7CB0015A16C /* MainSceneInteractor.swift */; };
+		711F7FB429F7E7CB0015A16C /* MainSceneInteractorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7FA829F7E7CB0015A16C /* MainSceneInteractorService.swift */; };
+		711F7FB529F7E7CB0015A16C /* MainSceneInteractorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7FA929F7E7CB0015A16C /* MainSceneInteractorContract.swift */; };
+		711F7FB629F7E7CB0015A16C /* MainSceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7FAA29F7E7CB0015A16C /* MainSceneViewModel.swift */; };
+		711F7FB729F7E7CB0015A16C /* MainSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 711F7FAB29F7E7CB0015A16C /* MainSceneViewController.xib */; };
+		711F7FB829F7E7CB0015A16C /* MainSceneViewControllerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7FAC29F7E7CB0015A16C /* MainSceneViewControllerContract.swift */; };
+		711F7FB929F7E7CB0015A16C /* MainScenePresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7FAD29F7E7CB0015A16C /* MainScenePresenterContract.swift */; };
+		711F7FBA29F7E7CB0015A16C /* MainScenePresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7FAE29F7E7CB0015A16C /* MainScenePresenterService.swift */; };
 		715F7D1429F77E630006B0EC /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D1329F77E630006B0EC /* AppRouter.swift */; };
 		715F7D1729F77FFF0006B0EC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D1629F77FFF0006B0EC /* BaseViewController.swift */; };
 		715F7D1929F781070006B0EC /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D1829F781070006B0EC /* NibLoadableView.swift */; };
@@ -42,6 +68,32 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		710E58D729F83ED20077399D /* MainSceneTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneTabBarItem.swift; sourceTree = "<group>"; };
+		711F7F6B29F7D0420015A16C /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
+		711F7F8A29F7E5800015A16C /* PlaceholderSceneToDeletePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderSceneToDeletePresenter.swift; sourceTree = "<group>"; };
+		711F7F8B29F7E5800015A16C /* PlaceholderSceneToDeleteRouterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderSceneToDeleteRouterContract.swift; sourceTree = "<group>"; };
+		711F7F8C29F7E5800015A16C /* PlaceholderSceneToDeleteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderSceneToDeleteRouter.swift; sourceTree = "<group>"; };
+		711F7F8D29F7E5800015A16C /* PlaceholderSceneToDeleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderSceneToDeleteViewController.swift; sourceTree = "<group>"; };
+		711F7F8E29F7E5800015A16C /* PlaceholderSceneToDeleteInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderSceneToDeleteInteractor.swift; sourceTree = "<group>"; };
+		711F7F8F29F7E5800015A16C /* PlaceholderSceneToDeleteInteractorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderSceneToDeleteInteractorService.swift; sourceTree = "<group>"; };
+		711F7F9029F7E5800015A16C /* PlaceholderSceneToDeleteInteractorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderSceneToDeleteInteractorContract.swift; sourceTree = "<group>"; };
+		711F7F9129F7E5800015A16C /* PlaceholderSceneToDeleteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderSceneToDeleteViewModel.swift; sourceTree = "<group>"; };
+		711F7F9229F7E5800015A16C /* PlaceholderSceneToDeleteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceholderSceneToDeleteViewController.xib; sourceTree = "<group>"; };
+		711F7F9329F7E5800015A16C /* PlaceholderSceneToDeleteViewControllerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderSceneToDeleteViewControllerContract.swift; sourceTree = "<group>"; };
+		711F7F9429F7E5800015A16C /* PlaceholderSceneToDeletePresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderSceneToDeletePresenterContract.swift; sourceTree = "<group>"; };
+		711F7F9529F7E5800015A16C /* PlaceholderSceneToDeletePresenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderSceneToDeletePresenterService.swift; sourceTree = "<group>"; };
+		711F7FA329F7E7CB0015A16C /* MainScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScenePresenter.swift; sourceTree = "<group>"; };
+		711F7FA429F7E7CB0015A16C /* MainSceneRouterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneRouterContract.swift; sourceTree = "<group>"; };
+		711F7FA529F7E7CB0015A16C /* MainSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneRouter.swift; sourceTree = "<group>"; };
+		711F7FA629F7E7CB0015A16C /* MainSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneViewController.swift; sourceTree = "<group>"; };
+		711F7FA729F7E7CB0015A16C /* MainSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneInteractor.swift; sourceTree = "<group>"; };
+		711F7FA829F7E7CB0015A16C /* MainSceneInteractorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneInteractorService.swift; sourceTree = "<group>"; };
+		711F7FA929F7E7CB0015A16C /* MainSceneInteractorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneInteractorContract.swift; sourceTree = "<group>"; };
+		711F7FAA29F7E7CB0015A16C /* MainSceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneViewModel.swift; sourceTree = "<group>"; };
+		711F7FAB29F7E7CB0015A16C /* MainSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainSceneViewController.xib; sourceTree = "<group>"; };
+		711F7FAC29F7E7CB0015A16C /* MainSceneViewControllerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneViewControllerContract.swift; sourceTree = "<group>"; };
+		711F7FAD29F7E7CB0015A16C /* MainScenePresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScenePresenterContract.swift; sourceTree = "<group>"; };
+		711F7FAE29F7E7CB0015A16C /* MainScenePresenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScenePresenterService.swift; sourceTree = "<group>"; };
 		715F7D1329F77E630006B0EC /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		715F7D1629F77FFF0006B0EC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		715F7D1829F781070006B0EC /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
@@ -89,6 +141,131 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		711F7F6A29F7CF6A0015A16C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				711F7F7029F7D2DA0015A16C /* Router */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		711F7F7029F7D2DA0015A16C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				711F7F6B29F7D0420015A16C /* TabBarRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		711F7F8829F7DF7D0015A16C /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		711F7F8929F7E54C0015A16C /* PlaceholderViewToDelete */ = {
+			isa = PBXGroup;
+			children = (
+				711F7F8A29F7E5800015A16C /* PlaceholderSceneToDeletePresenter.swift */,
+				711F7F8B29F7E5800015A16C /* PlaceholderSceneToDeleteRouterContract.swift */,
+				711F7F8C29F7E5800015A16C /* PlaceholderSceneToDeleteRouter.swift */,
+				711F7F8D29F7E5800015A16C /* PlaceholderSceneToDeleteViewController.swift */,
+				711F7F8E29F7E5800015A16C /* PlaceholderSceneToDeleteInteractor.swift */,
+				711F7F8F29F7E5800015A16C /* PlaceholderSceneToDeleteInteractorService.swift */,
+				711F7F9029F7E5800015A16C /* PlaceholderSceneToDeleteInteractorContract.swift */,
+				711F7F9129F7E5800015A16C /* PlaceholderSceneToDeleteViewModel.swift */,
+				711F7F9229F7E5800015A16C /* PlaceholderSceneToDeleteViewController.xib */,
+				711F7F9329F7E5800015A16C /* PlaceholderSceneToDeleteViewControllerContract.swift */,
+				711F7F9429F7E5800015A16C /* PlaceholderSceneToDeletePresenterContract.swift */,
+				711F7F9529F7E5800015A16C /* PlaceholderSceneToDeletePresenterService.swift */,
+			);
+			path = PlaceholderViewToDelete;
+			sourceTree = "<group>";
+		};
+		711F7FA229F7E7B80015A16C /* MainScene */ = {
+			isa = PBXGroup;
+			children = (
+				711F7FC129F7E8290015A16C /* Router */,
+				711F7FC029F7E81B0015A16C /* ViewModel */,
+				711F7FBB29F7E7D40015A16C /* Interactor */,
+				711F7FBE29F7E8030015A16C /* Presenter */,
+				711F7FBD29F7E7F50015A16C /* View */,
+			);
+			path = MainScene;
+			sourceTree = "<group>";
+		};
+		711F7FBB29F7E7D40015A16C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				711F7FBC29F7E7E50015A16C /* Service */,
+				711F7FA729F7E7CB0015A16C /* MainSceneInteractor.swift */,
+				711F7FA929F7E7CB0015A16C /* MainSceneInteractorContract.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		711F7FBC29F7E7E50015A16C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				711F7FA829F7E7CB0015A16C /* MainSceneInteractorService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		711F7FBD29F7E7F50015A16C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				711F7FA629F7E7CB0015A16C /* MainSceneViewController.swift */,
+				711F7FAB29F7E7CB0015A16C /* MainSceneViewController.xib */,
+				711F7FAC29F7E7CB0015A16C /* MainSceneViewControllerContract.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		711F7FBE29F7E8030015A16C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				711F7FBF29F7E8100015A16C /* Service */,
+				711F7FA329F7E7CB0015A16C /* MainScenePresenter.swift */,
+				711F7FAD29F7E7CB0015A16C /* MainScenePresenterContract.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		711F7FBF29F7E8100015A16C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				711F7FAE29F7E7CB0015A16C /* MainScenePresenterService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		711F7FC029F7E81B0015A16C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				711F7FAA29F7E7CB0015A16C /* MainSceneViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		711F7FC129F7E8290015A16C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				711F7FA529F7E7CB0015A16C /* MainSceneRouter.swift */,
+				711F7FA429F7E7CB0015A16C /* MainSceneRouterContract.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		711F7FC829F7FC270015A16C /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				710E58D729F83ED20077399D /* MainSceneTabBarItem.swift */,
+			);
+			path = UIElements;
+			sourceTree = "<group>";
+		};
 		715F7D1229F77E4F0006B0EC /* AppRouter */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +277,8 @@
 		715F7D1529F77FEA0006B0EC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				711F7FC829F7FC270015A16C /* UIElements */,
+				711F7F8829F7DF7D0015A16C /* Providers */,
 				715F7D3B29F782DD0006B0EC /* SceneTransitions */,
 				715F7D1629F77FFF0006B0EC /* BaseViewController.swift */,
 				715F7D1829F781070006B0EC /* NibLoadableView.swift */,
@@ -110,7 +289,10 @@
 		715F7D1A29F781450006B0EC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				711F7F6A29F7CF6A0015A16C /* TabBar */,
 				715F7D1B29F781540006B0EC /* InitialScene */,
+				711F7FA229F7E7B80015A16C /* MainScene */,
+				711F7F8929F7E54C0015A16C /* PlaceholderViewToDelete */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -411,7 +593,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				711F7FB729F7E7CB0015A16C /* MainSceneViewController.xib in Resources */,
 				715F7D3029F781660006B0EC /* InitialSceneViewController.xib in Resources */,
+				711F7F9E29F7E5810015A16C /* PlaceholderSceneToDeleteViewController.xib in Resources */,
 				7176EA6229F77A25001C0F39 /* LaunchScreen.storyboard in Resources */,
 				7176EA5F29F77A25001C0F39 /* Assets.xcassets in Resources */,
 			);
@@ -433,26 +617,50 @@
 				715F7D3129F781660006B0EC /* InitialSceneViewControllerContract.swift in Sources */,
 				715F7D1929F781070006B0EC /* NibLoadableView.swift in Sources */,
 				715F7D3D29F782FD0006B0EC /* BlurTransitionAnimator.swift in Sources */,
+				711F7FBA29F7E7CB0015A16C /* MainScenePresenterService.swift in Sources */,
 				715F7D3229F781660006B0EC /* InitialScenePresenterContract.swift in Sources */,
+				711F7F9A29F7E5810015A16C /* PlaceholderSceneToDeleteInteractor.swift in Sources */,
 				715F7D1729F77FFF0006B0EC /* BaseViewController.swift in Sources */,
+				711F7F9F29F7E5810015A16C /* PlaceholderSceneToDeleteViewControllerContract.swift in Sources */,
+				711F7F9B29F7E5810015A16C /* PlaceholderSceneToDeleteInteractorService.swift in Sources */,
+				711F7FB929F7E7CB0015A16C /* MainScenePresenterContract.swift in Sources */,
 				715F7D3329F781660006B0EC /* InitialScenePresenterService.swift in Sources */,
 				715F7D4829F79DD70006B0EC /* AppDataLayer.swift in Sources */,
 				715F7D5029F79E5D0006B0EC /* AppAILayer.swift in Sources */,
+				711F7FAF29F7E7CB0015A16C /* MainScenePresenter.swift in Sources */,
 				7176EA5329F77A25001C0F39 /* AppDelegate.swift in Sources */,
+				711F7FB529F7E7CB0015A16C /* MainSceneInteractorContract.swift in Sources */,
 				715F7D2A29F781660006B0EC /* InitialSceneRouter.swift in Sources */,
+				711F7F9929F7E5800015A16C /* PlaceholderSceneToDeleteViewController.swift in Sources */,
+				711F7F9729F7E5800015A16C /* PlaceholderSceneToDeleteRouterContract.swift in Sources */,
 				715F7D5829F7A5AF0006B0EC /* AppUILayerStyleService.swift in Sources */,
 				715F7D2D29F781660006B0EC /* InitialSceneInteractorService.swift in Sources */,
 				715F7D2829F781660006B0EC /* InitialScenePresenter.swift in Sources */,
 				715F7D2B29F781660006B0EC /* InitialSceneViewController.swift in Sources */,
+				711F7F9829F7E5800015A16C /* PlaceholderSceneToDeleteRouter.swift in Sources */,
+				710E58D829F83ED20077399D /* MainSceneTabBarItem.swift in Sources */,
 				715F7D5629F79F5A0006B0EC /* AppUILayerStyleServiceType.swift in Sources */,
 				715F7D4C29F79E0D0006B0EC /* AppUILayer.swift in Sources */,
 				715F7D1429F77E630006B0EC /* AppRouter.swift in Sources */,
+				711F7FB329F7E7CB0015A16C /* MainSceneInteractor.swift in Sources */,
+				711F7FB629F7E7CB0015A16C /* MainSceneViewModel.swift in Sources */,
 				715F7D4A29F79DF10006B0EC /* AppDataLayerType.swift in Sources */,
+				711F7FA029F7E5810015A16C /* PlaceholderSceneToDeletePresenterContract.swift in Sources */,
+				711F7F6C29F7D0420015A16C /* TabBarRouter.swift in Sources */,
+				711F7F9629F7E5800015A16C /* PlaceholderSceneToDeletePresenter.swift in Sources */,
+				711F7F9D29F7E5810015A16C /* PlaceholderSceneToDeleteViewModel.swift in Sources */,
 				715F7D2F29F781660006B0EC /* InitialSceneViewModel.swift in Sources */,
 				715F7D4229F79CE30006B0EC /* AppCoreContract.swift in Sources */,
+				711F7FB129F7E7CB0015A16C /* MainSceneRouter.swift in Sources */,
 				715F7D5B29F7A85C0006B0EC /* AppUILayerDeviceService.swift in Sources */,
+				711F7FB229F7E7CB0015A16C /* MainSceneViewController.swift in Sources */,
+				711F7FB429F7E7CB0015A16C /* MainSceneInteractorService.swift in Sources */,
+				711F7F9C29F7E5810015A16C /* PlaceholderSceneToDeleteInteractorContract.swift in Sources */,
+				711F7FB829F7E7CB0015A16C /* MainSceneViewControllerContract.swift in Sources */,
 				715F7D2C29F781660006B0EC /* InitialSceneInteractor.swift in Sources */,
 				715F7D2929F781660006B0EC /* InitialSceneRouterContract.swift in Sources */,
+				711F7FA129F7E5810015A16C /* PlaceholderSceneToDeletePresenterService.swift in Sources */,
+				711F7FB029F7E7CB0015A16C /* MainSceneRouterContract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
