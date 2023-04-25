@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		715F7D1429F77E630006B0EC /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D1329F77E630006B0EC /* AppRouter.swift */; };
+		715F7D1729F77FFF0006B0EC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D1629F77FFF0006B0EC /* BaseViewController.swift */; };
 		7176EA5329F77A25001C0F39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176EA5229F77A25001C0F39 /* AppDelegate.swift */; };
 		7176EA5D29F77A25001C0F39 /* Elogion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7176EA5B29F77A25001C0F39 /* Elogion.xcdatamodeld */; };
 		7176EA5F29F77A25001C0F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7176EA5E29F77A25001C0F39 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		715F7D1329F77E630006B0EC /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		715F7D1629F77FFF0006B0EC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7176EA4F29F77A24001C0F39 /* Elogion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elogion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7176EA5229F77A25001C0F39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7176EA5C29F77A25001C0F39 /* Elogion.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Elogion.xcdatamodel; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 			path = AppRouter;
 			sourceTree = "<group>";
 		};
+		715F7D1529F77FEA0006B0EC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				715F7D1629F77FFF0006B0EC /* BaseViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		7176EA4629F77A24001C0F39 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				7176EA6929F77CE1001C0F39 /* Application */,
+				715F7D1529F77FEA0006B0EC /* Common */,
 				7176EA6B29F77CFB001C0F39 /* SourceFiles */,
 				7176EA6E29F77D37001C0F39 /* SupportingFiles */,
 				7176EA6C29F77D03001C0F39 /* LaunchScreen */,
@@ -191,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7176EA5D29F77A25001C0F39 /* Elogion.xcdatamodeld in Sources */,
+				715F7D1729F77FFF0006B0EC /* BaseViewController.swift in Sources */,
 				7176EA5329F77A25001C0F39 /* AppDelegate.swift in Sources */,
 				715F7D1429F77E630006B0EC /* AppRouter.swift in Sources */,
 			);
