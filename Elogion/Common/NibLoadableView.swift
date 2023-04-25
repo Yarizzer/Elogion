@@ -18,7 +18,3 @@ extension NibLoadableView where Self: UIView {
 extension NibLoadableView where Self: UIViewController {
     static var nibName: String { String(describing: self) }
 }
-
-extension NibLoadableView where Self: UITabBarController {
-    static var nibName: String { String(describing: self) }
-}

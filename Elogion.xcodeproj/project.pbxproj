@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		710E58D829F83ED20077399D /* MainSceneTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E58D729F83ED20077399D /* MainSceneTabBarItem.swift */; };
 		711F7F6C29F7D0420015A16C /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7F6B29F7D0420015A16C /* TabBarRouter.swift */; };
 		711F7F9629F7E5800015A16C /* PlaceholderSceneToDeletePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7F8A29F7E5800015A16C /* PlaceholderSceneToDeletePresenter.swift */; };
 		711F7F9729F7E5800015A16C /* PlaceholderSceneToDeleteRouterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7F8B29F7E5800015A16C /* PlaceholderSceneToDeleteRouterContract.swift */; };
@@ -68,7 +67,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		710E58D729F83ED20077399D /* MainSceneTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneTabBarItem.swift; sourceTree = "<group>"; };
 		711F7F6B29F7D0420015A16C /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
 		711F7F8A29F7E5800015A16C /* PlaceholderSceneToDeletePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderSceneToDeletePresenter.swift; sourceTree = "<group>"; };
 		711F7F8B29F7E5800015A16C /* PlaceholderSceneToDeleteRouterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderSceneToDeleteRouterContract.swift; sourceTree = "<group>"; };
@@ -141,9 +139,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		710E58DB29F844090077399D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		711F7F6A29F7CF6A0015A16C /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				710E58DB29F844090077399D /* View */,
 				711F7F7029F7D2DA0015A16C /* Router */,
 			);
 			path = TabBar;
@@ -261,7 +267,6 @@
 		711F7FC829F7FC270015A16C /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
-				710E58D729F83ED20077399D /* MainSceneTabBarItem.swift */,
 			);
 			path = UIElements;
 			sourceTree = "<group>";
@@ -638,7 +643,6 @@
 				715F7D2829F781660006B0EC /* InitialScenePresenter.swift in Sources */,
 				715F7D2B29F781660006B0EC /* InitialSceneViewController.swift in Sources */,
 				711F7F9829F7E5800015A16C /* PlaceholderSceneToDeleteRouter.swift in Sources */,
-				710E58D829F83ED20077399D /* MainSceneTabBarItem.swift in Sources */,
 				715F7D5629F79F5A0006B0EC /* AppUILayerStyleServiceType.swift in Sources */,
 				715F7D4C29F79E0D0006B0EC /* AppUILayer.swift in Sources */,
 				715F7D1429F77E630006B0EC /* AppRouter.swift in Sources */,

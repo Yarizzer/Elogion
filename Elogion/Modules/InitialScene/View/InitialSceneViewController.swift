@@ -25,7 +25,9 @@ extension InitialSceneViewController: InitialSceneViewControllerType {
 	func update(viewModelDataType: InitialSceneViewControllerViewModel.ViewModelDataType) {
 		switch viewModelDataType {
 		case .initialSetup(let model):
-			print("\(self) \(#function) with model instance \(model)")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
+                self?.interactor?.makeRequest(requestType: .routeToTabBarController)
+            }
 		}
 	}
 }

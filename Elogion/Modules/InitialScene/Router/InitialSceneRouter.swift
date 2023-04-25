@@ -16,10 +16,8 @@ protocol InitialSceneRoutable {
 class InitialSceneRouter {
 	private func prepareDestinationScene(with type: InitialSceneRoutableContractData.InitialSceneRoutableSceneType) -> UIViewController {
 		switch type {
-		case .mainScene: print("\(self) \(#function) msg: 'Test scene'")
+        case .tabBar: return TabBarRouter.assembly()
 		}
-		
-		return UIViewController()
 	}
 	
 	private weak var view: InitialSceneViewController?
@@ -48,7 +46,7 @@ extension InitialSceneRouter: InitialSceneRoutable {
 	func routeTo(scene type: InitialSceneRoutableContractData.InitialSceneRoutableSceneType) {
 		let vc = prepareDestinationScene(with: type)
         #warning("uncomment if need to implement custom scene transitioning")
-//		vc.modalPresentationStyle = .currentContext
+		vc.modalPresentationStyle = .currentContext
 //		vc.transitioningDelegate = view
 		self.view?.present(vc, animated: true)
 	}

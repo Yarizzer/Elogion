@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import UIKit
 
 protocol TabBarRoutable {
     static func assembly() -> UITabBarController
