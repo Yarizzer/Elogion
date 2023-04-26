@@ -37,6 +37,9 @@
 		7138E5B729F8C9F4000C4F3A /* CaptureViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138E5B629F8C9F4000C4F3A /* CaptureViewModelType.swift */; };
 		7138E5B929F8CA0D000C4F3A /* CaptureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138E5B829F8CA0D000C4F3A /* CaptureViewModel.swift */; };
 		7138E5BC29F8CB1F000C4F3A /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138E5BB29F8CB1F000C4F3A /* Logger.swift */; };
+		7138E5BE29F8CED3000C4F3A /* AppAILayerResnet50Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138E5BD29F8CED3000C4F3A /* AppAILayerResnet50Service.swift */; };
+		7138E5C129F8CFB5000C4F3A /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7138E5C029F8CFB5000C4F3A /* Resnet50.mlmodel */; };
+		7138E5C429F8D87C000C4F3A /* ObjectPredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138E5C329F8D87C000C4F3A /* ObjectPredictor.swift */; };
 		715F7D1429F77E630006B0EC /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D1329F77E630006B0EC /* AppRouter.swift */; };
 		715F7D1729F77FFF0006B0EC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D1629F77FFF0006B0EC /* BaseViewController.swift */; };
 		715F7D1929F781070006B0EC /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D1829F781070006B0EC /* NibLoadableView.swift */; };
@@ -102,6 +105,9 @@
 		7138E5B629F8C9F4000C4F3A /* CaptureViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewModelType.swift; sourceTree = "<group>"; };
 		7138E5B829F8CA0D000C4F3A /* CaptureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewModel.swift; sourceTree = "<group>"; };
 		7138E5BB29F8CB1F000C4F3A /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		7138E5BD29F8CED3000C4F3A /* AppAILayerResnet50Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAILayerResnet50Service.swift; sourceTree = "<group>"; };
+		7138E5C029F8CFB5000C4F3A /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		7138E5C329F8D87C000C4F3A /* ObjectPredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectPredictor.swift; sourceTree = "<group>"; };
 		715F7D1329F77E630006B0EC /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		715F7D1629F77FFF0006B0EC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		715F7D1829F781070006B0EC /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
@@ -303,8 +309,8 @@
 		7138E5B129F8C8F2000C4F3A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				7138E5B629F8C9F4000C4F3A /* CaptureViewModelType.swift */,
 				7138E5B829F8CA0D000C4F3A /* CaptureViewModel.swift */,
+				7138E5B629F8C9F4000C4F3A /* CaptureViewModelType.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -315,6 +321,22 @@
 				7138E5BB29F8CB1F000C4F3A /* Logger.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7138E5BF29F8CEDA000C4F3A /* Resnet50Service */ = {
+			isa = PBXGroup;
+			children = (
+				7138E5BD29F8CED3000C4F3A /* AppAILayerResnet50Service.swift */,
+			);
+			path = Resnet50Service;
+			sourceTree = "<group>";
+		};
+		7138E5C229F8D86C000C4F3A /* ObjectPredictor */ = {
+			isa = PBXGroup;
+			children = (
+				7138E5C329F8D87C000C4F3A /* ObjectPredictor.swift */,
+			);
+			path = ObjectPredictor;
 			sourceTree = "<group>";
 		};
 		715F7D1229F77E4F0006B0EC /* AppRouter */ = {
@@ -473,6 +495,8 @@
 		715F7D4629F79D8B0006B0EC /* AILayer */ = {
 			isa = PBXGroup;
 			children = (
+				7138E5C229F8D86C000C4F3A /* ObjectPredictor */,
+				7138E5BF29F8CEDA000C4F3A /* Resnet50Service */,
 				715F7D4F29F79E5D0006B0EC /* AppAILayer.swift */,
 				715F7D5129F79E710006B0EC /* AppAILayerType.swift */,
 			);
@@ -574,6 +598,7 @@
 		7176EA6D29F77D0C001C0F39 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				7138E5C029F8CFB5000C4F3A /* Resnet50.mlmodel */,
 				7176EA5B29F77A25001C0F39 /* Elogion.xcdatamodeld */,
 			);
 			path = Storage;
@@ -667,6 +692,7 @@
 				7176EA5D29F77A25001C0F39 /* Elogion.xcdatamodeld in Sources */,
 				715F7D5229F79E710006B0EC /* AppAILayerType.swift in Sources */,
 				715F7D3129F781660006B0EC /* InitialSceneViewControllerContract.swift in Sources */,
+				7138E5C429F8D87C000C4F3A /* ObjectPredictor.swift in Sources */,
 				715F7D1929F781070006B0EC /* NibLoadableView.swift in Sources */,
 				715F7D3D29F782FD0006B0EC /* BlurTransitionAnimator.swift in Sources */,
 				711F7FBA29F7E7CB0015A16C /* MainScenePresenterService.swift in Sources */,
@@ -677,8 +703,10 @@
 				711F7F9B29F7E5810015A16C /* PlaceholderSceneToDeleteInteractorService.swift in Sources */,
 				711F7FB929F7E7CB0015A16C /* MainScenePresenterContract.swift in Sources */,
 				715F7D3329F781660006B0EC /* InitialScenePresenterService.swift in Sources */,
+				7138E5C129F8CFB5000C4F3A /* Resnet50.mlmodel in Sources */,
 				715F7D4829F79DD70006B0EC /* AppDataLayer.swift in Sources */,
 				7138E5B729F8C9F4000C4F3A /* CaptureViewModelType.swift in Sources */,
+				7138E5BE29F8CED3000C4F3A /* AppAILayerResnet50Service.swift in Sources */,
 				7138E5BC29F8CB1F000C4F3A /* Logger.swift in Sources */,
 				715F7D5029F79E5D0006B0EC /* AppAILayer.swift in Sources */,
 				711F7FAF29F7E7CB0015A16C /* MainScenePresenter.swift in Sources */,

@@ -6,7 +6,11 @@
 //
 
 class AppAILayer {
+    init() {
+        self.objectPredictor = ObjectPredictor()
+    }
     
+    private let objectPredictor: ObjectPredictable
 }
 
 extension AppAILayer: AppAILayerType {

@@ -149,12 +149,53 @@ extension CaptureView: AVCaptureVideoDataOutputSampleBufferDelegate {
         
         let image = UIImage(ciImage: ciImage)
         
+        //MARK: - Begin context
         UIGraphicsBeginImageContext(Constants.allowedImageDrawRect.size)
         
         image.draw(in: Constants.allowedImageDrawRect)
         guard let resizedImage = UIGraphicsGetImageFromCurrentImageContext() else { return }
         
         UIGraphicsEndImageContext()
+        //MARK: - End context
+        
+        let attrs = [kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue,
+             kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue] as CFDictionary
+        
+        var pixelBuffer: CVPixelBuffer?
+        
+        var status = CVPixelBufferCreate(kCFAllocatorDefault, Int(resizedImage.size.width), Int(resizedImage.size.height), kCVPixelFormatType_32ABGR, attrs, &pixelBuffer)
+        
+        guard status == kCVReturnSuccess, let pixelBuffer else { return }
+        
+        CVPixelBufferLockBaseAddress(pixelBuffer, CVPixelBufferLockFlags(rawValue: 0))
+        let pixelData = CVPixelBufferGetBaseAddress(pixelBuffer)
+        let rgbColorSpace = CGColorSpaceCreateDeviceRGB()
+        let context = CGContext(data: pixelData,
+                                width: Int(resizedImage.size.width),
+                                height: Int(resizedImage.size.height),
+                                bitsPerComponent: 8,
+                                bytesPerRow: CVPixelBufferGetBytesPerRow(pixelBuffer),
+                                space: rgbColorSpace,
+                                bitmapInfo: CGImageAlphaInfo.noneSkipFirst.rawValue)
+        
+        context?.translateBy(x: 0, y: resizedImage.size.height)
+        context?.scaleBy(x: 1, y: -1)
+        
+        guard let context else { return }
+        
+        UIGraphicsPushContext(context)
+        
+        resizedImage.draw(in: CGRect(x: 0.0, y: 0.0, width: resizedImage.size.width, height: resizedImage.size.height))
+        
+        UIGraphicsPopContext()
+        
+        CVPixelBufferUnlockBaseAddress(pixelBuffer, CVPixelBufferLockFlags(rawValue: 0))
+        
+        guard let output = viewModel?.getPrediction(image: pixelBuffer) else { return }
+        
+        DispatchQueue.main.async {
+            print(output)
+        }
     }
 }
 

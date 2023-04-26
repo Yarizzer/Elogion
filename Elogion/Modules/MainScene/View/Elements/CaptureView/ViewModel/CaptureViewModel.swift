@@ -5,12 +5,25 @@
 //  Created by Yaroslav Abaturov on 26.04.2023.
 //
 
+import CoreML
+
 class CaptureViewModel {
+    init() {
+        self.mlModel = try? Resnet50(configuration: MLModelConfiguration())
+    }
     
+    private let mlModel: Resnet50?
 }
 
 extension CaptureViewModel: CaptureViewModelType {
+    
     var titleValue: String { Constants.labelValue }
+    
+    func getPrediction(image buffer: CVPixelBuffer) -> String? {
+        guard let mlModel else { return nil }
+        
+        return try? mlModel.prediction(image: buffer).classLabel
+    }
 }
 
 extension CaptureViewModel {
