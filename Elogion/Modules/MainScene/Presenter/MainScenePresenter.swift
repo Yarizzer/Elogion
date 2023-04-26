@@ -22,7 +22,8 @@ extension MainScenePresenter: MainScenePresentable {
 		
 		switch responseType {
 		case .initialSetup: viewController?.update(viewModelDataType: .initialSetup(with: model))
-		case .drainView: viewController = nil
+        case .viewIsReady: viewController?.update(viewModelDataType: .viewIsReady)
+        case .viewWillDisappear: viewController?.update(viewModelDataType: .viewWillDisappear)
 		}
 	}
 }

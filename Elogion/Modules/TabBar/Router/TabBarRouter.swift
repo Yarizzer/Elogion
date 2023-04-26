@@ -18,19 +18,19 @@ class TabBarRouter {
 extension TabBarRouter: TabBarRoutable {
     static func assembly() -> UITabBarController {
         let router = TabBarRouter()
-
+        
         #warning("remove when ready other scenes")
         let leftVC = configureVC(vc: PlaceholderSceneToDeleteRouter.assembly(), tabBarItemData: Constants.placeholderData)
         let mainVC = configureVC(vc: MainSceneRouter.assembly(), tabBarItemData: Constants.mainSceneData)
         let rightVC = configureVC(vc: PlaceholderSceneToDeleteRouter.assembly(), tabBarItemData: Constants.placeholderData)
         
-        let tabBarController    = UITabBarController()
+        let controller = UITabBarController()
         
-        tabBarController.tabBar.tintColor = AppCore.shared.uiLayer.style.colorBlue
-        tabBarController.tabBar.unselectedItemTintColor = AppCore.shared.uiLayer.style.colorDarkGray
-        tabBarController.tabBar.backgroundColor = AppCore.shared.uiLayer.style.colorLightGray
+        controller.tabBar.tintColor = AppCore.shared.uiLayer.style.colorBlue
+        controller.tabBar.unselectedItemTintColor = AppCore.shared.uiLayer.style.colorDarkGray
+        controller.tabBar.backgroundColor = AppCore.shared.uiLayer.style.colorLightGray
         
-        router.controller = tabBarController
+        router.controller = controller
         router.controller?.viewControllers = [leftVC, mainVC, rightVC]
         
         guard let controller = router.controller else {

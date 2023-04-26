@@ -13,5 +13,7 @@ protocol MainSceneViewControllerType {
 struct MainSceneViewControllerViewModel {
 	enum ViewModelDataType {
 		case initialSetup(with: MainSceneViewModelType)
+        case viewIsReady
+        case viewWillDisappear
 	}
 }

@@ -32,8 +32,11 @@
 		711F7FB829F7E7CB0015A16C /* MainSceneViewControllerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7FAC29F7E7CB0015A16C /* MainSceneViewControllerContract.swift */; };
 		711F7FB929F7E7CB0015A16C /* MainScenePresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7FAD29F7E7CB0015A16C /* MainScenePresenterContract.swift */; };
 		711F7FBA29F7E7CB0015A16C /* MainScenePresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7FAE29F7E7CB0015A16C /* MainScenePresenterService.swift */; };
-		7138E5A729F8C2E3000C4F3A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138E5A529F8C2E3000C4F3A /* TabBarController.swift */; };
-		7138E5A829F8C2E3000C4F3A /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7138E5A629F8C2E3000C4F3A /* TabBarController.xib */; };
+		7138E5B329F8C90C000C4F3A /* CaptureViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138E5B229F8C90C000C4F3A /* CaptureViewType.swift */; };
+		7138E5B529F8C929000C4F3A /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138E5B429F8C929000C4F3A /* CaptureView.swift */; };
+		7138E5B729F8C9F4000C4F3A /* CaptureViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138E5B629F8C9F4000C4F3A /* CaptureViewModelType.swift */; };
+		7138E5B929F8CA0D000C4F3A /* CaptureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138E5B829F8CA0D000C4F3A /* CaptureViewModel.swift */; };
+		7138E5BC29F8CB1F000C4F3A /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138E5BB29F8CB1F000C4F3A /* Logger.swift */; };
 		715F7D1429F77E630006B0EC /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D1329F77E630006B0EC /* AppRouter.swift */; };
 		715F7D1729F77FFF0006B0EC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D1629F77FFF0006B0EC /* BaseViewController.swift */; };
 		715F7D1929F781070006B0EC /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D1829F781070006B0EC /* NibLoadableView.swift */; };
@@ -94,8 +97,11 @@
 		711F7FAC29F7E7CB0015A16C /* MainSceneViewControllerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneViewControllerContract.swift; sourceTree = "<group>"; };
 		711F7FAD29F7E7CB0015A16C /* MainScenePresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScenePresenterContract.swift; sourceTree = "<group>"; };
 		711F7FAE29F7E7CB0015A16C /* MainScenePresenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScenePresenterService.swift; sourceTree = "<group>"; };
-		7138E5A529F8C2E3000C4F3A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		7138E5A629F8C2E3000C4F3A /* TabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarController.xib; sourceTree = "<group>"; };
+		7138E5B229F8C90C000C4F3A /* CaptureViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewType.swift; sourceTree = "<group>"; };
+		7138E5B429F8C929000C4F3A /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
+		7138E5B629F8C9F4000C4F3A /* CaptureViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewModelType.swift; sourceTree = "<group>"; };
+		7138E5B829F8CA0D000C4F3A /* CaptureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewModel.swift; sourceTree = "<group>"; };
+		7138E5BB29F8CB1F000C4F3A /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		715F7D1329F77E630006B0EC /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		715F7D1629F77FFF0006B0EC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		715F7D1829F781070006B0EC /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
@@ -143,20 +149,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		710E58DB29F844090077399D /* View */ = {
-			isa = PBXGroup;
-			children = (
-				7138E5A529F8C2E3000C4F3A /* TabBarController.swift */,
-				7138E5A629F8C2E3000C4F3A /* TabBarController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		711F7F6A29F7CF6A0015A16C /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
 				711F7F7029F7D2DA0015A16C /* Router */,
-				710E58DB29F844090077399D /* View */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -228,6 +224,7 @@
 		711F7FBD29F7E7F50015A16C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7138E5AE29F8C8DC000C4F3A /* Elements */,
 				711F7FA629F7E7CB0015A16C /* MainSceneViewController.swift */,
 				711F7FAB29F7E7CB0015A16C /* MainSceneViewController.xib */,
 				711F7FAC29F7E7CB0015A16C /* MainSceneViewControllerContract.swift */,
@@ -275,6 +272,49 @@
 			children = (
 			);
 			path = UIElements;
+			sourceTree = "<group>";
+		};
+		7138E5AE29F8C8DC000C4F3A /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				7138E5AF29F8C8E3000C4F3A /* CaptureView */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		7138E5AF29F8C8E3000C4F3A /* CaptureView */ = {
+			isa = PBXGroup;
+			children = (
+				7138E5B129F8C8F2000C4F3A /* ViewModel */,
+				7138E5B029F8C8EC000C4F3A /* View */,
+			);
+			path = CaptureView;
+			sourceTree = "<group>";
+		};
+		7138E5B029F8C8EC000C4F3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7138E5B429F8C929000C4F3A /* CaptureView.swift */,
+				7138E5B229F8C90C000C4F3A /* CaptureViewType.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7138E5B129F8C8F2000C4F3A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7138E5B629F8C9F4000C4F3A /* CaptureViewModelType.swift */,
+				7138E5B829F8CA0D000C4F3A /* CaptureViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7138E5BA29F8CAFF000C4F3A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7138E5BB29F8CB1F000C4F3A /* Logger.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		715F7D1229F77E4F0006B0EC /* AppRouter */ = {
@@ -502,6 +542,7 @@
 				715F7D1229F77E4F0006B0EC /* AppRouter */,
 				7176EA6A29F77CE9001C0F39 /* AppDelegate */,
 				715F7D3E29F7831E0006B0EC /* AppCore */,
+				7138E5BA29F8CAFF000C4F3A /* Utilities */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -605,7 +646,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				711F7FB729F7E7CB0015A16C /* MainSceneViewController.xib in Resources */,
-				7138E5A829F8C2E3000C4F3A /* TabBarController.xib in Resources */,
 				715F7D3029F781660006B0EC /* InitialSceneViewController.xib in Resources */,
 				711F7F9E29F7E5810015A16C /* PlaceholderSceneToDeleteViewController.xib in Resources */,
 				7176EA6229F77A25001C0F39 /* LaunchScreen.storyboard in Resources */,
@@ -623,7 +663,6 @@
 				715F7D4029F79C5E0006B0EC /* AppCore.swift in Sources */,
 				715F7D2E29F781660006B0EC /* InitialSceneInteractorContract.swift in Sources */,
 				715F7D5D29F7A88B0006B0EC /* AppUILayerDeviceServiceType.swift in Sources */,
-				7138E5A729F8C2E3000C4F3A /* TabBarController.swift in Sources */,
 				715F7D4E29F79E340006B0EC /* AppUILayerType.swift in Sources */,
 				7176EA5D29F77A25001C0F39 /* Elogion.xcdatamodeld in Sources */,
 				715F7D5229F79E710006B0EC /* AppAILayerType.swift in Sources */,
@@ -639,6 +678,8 @@
 				711F7FB929F7E7CB0015A16C /* MainScenePresenterContract.swift in Sources */,
 				715F7D3329F781660006B0EC /* InitialScenePresenterService.swift in Sources */,
 				715F7D4829F79DD70006B0EC /* AppDataLayer.swift in Sources */,
+				7138E5B729F8C9F4000C4F3A /* CaptureViewModelType.swift in Sources */,
+				7138E5BC29F8CB1F000C4F3A /* Logger.swift in Sources */,
 				715F7D5029F79E5D0006B0EC /* AppAILayer.swift in Sources */,
 				711F7FAF29F7E7CB0015A16C /* MainScenePresenter.swift in Sources */,
 				7176EA5329F77A25001C0F39 /* AppDelegate.swift in Sources */,
@@ -650,12 +691,15 @@
 				715F7D2D29F781660006B0EC /* InitialSceneInteractorService.swift in Sources */,
 				715F7D2829F781660006B0EC /* InitialScenePresenter.swift in Sources */,
 				715F7D2B29F781660006B0EC /* InitialSceneViewController.swift in Sources */,
+				7138E5B529F8C929000C4F3A /* CaptureView.swift in Sources */,
 				711F7F9829F7E5800015A16C /* PlaceholderSceneToDeleteRouter.swift in Sources */,
 				715F7D5629F79F5A0006B0EC /* AppUILayerStyleServiceType.swift in Sources */,
+				7138E5B929F8CA0D000C4F3A /* CaptureViewModel.swift in Sources */,
 				715F7D4C29F79E0D0006B0EC /* AppUILayer.swift in Sources */,
 				715F7D1429F77E630006B0EC /* AppRouter.swift in Sources */,
 				711F7FB329F7E7CB0015A16C /* MainSceneInteractor.swift in Sources */,
 				711F7FB629F7E7CB0015A16C /* MainSceneViewModel.swift in Sources */,
+				7138E5B329F8C90C000C4F3A /* CaptureViewType.swift in Sources */,
 				715F7D4A29F79DF10006B0EC /* AppDataLayerType.swift in Sources */,
 				711F7FA029F7E5810015A16C /* PlaceholderSceneToDeletePresenterContract.swift in Sources */,
 				711F7F6C29F7D0420015A16C /* TabBarRouter.swift in Sources */,
