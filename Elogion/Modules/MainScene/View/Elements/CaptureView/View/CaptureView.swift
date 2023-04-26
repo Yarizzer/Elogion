@@ -163,9 +163,9 @@ extension CaptureView: AVCaptureVideoDataOutputSampleBufferDelegate {
         
         var pixelBuffer: CVPixelBuffer?
         
-        var status = CVPixelBufferCreate(kCFAllocatorDefault, Int(resizedImage.size.width), Int(resizedImage.size.height), kCVPixelFormatType_32ABGR, attrs, &pixelBuffer)
+        CVPixelBufferCreate(kCFAllocatorDefault, Int(resizedImage.size.width), Int(resizedImage.size.height), kCVPixelFormatType_32ARGB, attrs, &pixelBuffer)
         
-        guard status == kCVReturnSuccess, let pixelBuffer else { return }
+        guard let pixelBuffer else { return }
         
         CVPixelBufferLockBaseAddress(pixelBuffer, CVPixelBufferLockFlags(rawValue: 0))
         let pixelData = CVPixelBufferGetBaseAddress(pixelBuffer)
