@@ -32,6 +32,8 @@
 		711F7FB829F7E7CB0015A16C /* MainSceneViewControllerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7FAC29F7E7CB0015A16C /* MainSceneViewControllerContract.swift */; };
 		711F7FB929F7E7CB0015A16C /* MainScenePresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7FAD29F7E7CB0015A16C /* MainScenePresenterContract.swift */; };
 		711F7FBA29F7E7CB0015A16C /* MainScenePresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7FAE29F7E7CB0015A16C /* MainScenePresenterService.swift */; };
+		7138E5A729F8C2E3000C4F3A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138E5A529F8C2E3000C4F3A /* TabBarController.swift */; };
+		7138E5A829F8C2E3000C4F3A /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7138E5A629F8C2E3000C4F3A /* TabBarController.xib */; };
 		715F7D1429F77E630006B0EC /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D1329F77E630006B0EC /* AppRouter.swift */; };
 		715F7D1729F77FFF0006B0EC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D1629F77FFF0006B0EC /* BaseViewController.swift */; };
 		715F7D1929F781070006B0EC /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F7D1829F781070006B0EC /* NibLoadableView.swift */; };
@@ -92,6 +94,8 @@
 		711F7FAC29F7E7CB0015A16C /* MainSceneViewControllerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneViewControllerContract.swift; sourceTree = "<group>"; };
 		711F7FAD29F7E7CB0015A16C /* MainScenePresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScenePresenterContract.swift; sourceTree = "<group>"; };
 		711F7FAE29F7E7CB0015A16C /* MainScenePresenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScenePresenterService.swift; sourceTree = "<group>"; };
+		7138E5A529F8C2E3000C4F3A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		7138E5A629F8C2E3000C4F3A /* TabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarController.xib; sourceTree = "<group>"; };
 		715F7D1329F77E630006B0EC /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		715F7D1629F77FFF0006B0EC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		715F7D1829F781070006B0EC /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 		710E58DB29F844090077399D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7138E5A529F8C2E3000C4F3A /* TabBarController.swift */,
+				7138E5A629F8C2E3000C4F3A /* TabBarController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -149,8 +155,8 @@
 		711F7F6A29F7CF6A0015A16C /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				710E58DB29F844090077399D /* View */,
 				711F7F7029F7D2DA0015A16C /* Router */,
+				710E58DB29F844090077399D /* View */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -599,6 +605,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				711F7FB729F7E7CB0015A16C /* MainSceneViewController.xib in Resources */,
+				7138E5A829F8C2E3000C4F3A /* TabBarController.xib in Resources */,
 				715F7D3029F781660006B0EC /* InitialSceneViewController.xib in Resources */,
 				711F7F9E29F7E5810015A16C /* PlaceholderSceneToDeleteViewController.xib in Resources */,
 				7176EA6229F77A25001C0F39 /* LaunchScreen.storyboard in Resources */,
@@ -616,6 +623,7 @@
 				715F7D4029F79C5E0006B0EC /* AppCore.swift in Sources */,
 				715F7D2E29F781660006B0EC /* InitialSceneInteractorContract.swift in Sources */,
 				715F7D5D29F7A88B0006B0EC /* AppUILayerDeviceServiceType.swift in Sources */,
+				7138E5A729F8C2E3000C4F3A /* TabBarController.swift in Sources */,
 				715F7D4E29F79E340006B0EC /* AppUILayerType.swift in Sources */,
 				7176EA5D29F77A25001C0F39 /* Elogion.xcdatamodeld in Sources */,
 				715F7D5229F79E710006B0EC /* AppAILayerType.swift in Sources */,
