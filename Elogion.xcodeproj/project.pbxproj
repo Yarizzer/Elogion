@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71101DD929FB69CA00016C13 /* Publisher + Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71101DD829FB69CA00016C13 /* Publisher + Subscriber.swift */; };
 		711F7F6C29F7D0420015A16C /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7F6B29F7D0420015A16C /* TabBarRouter.swift */; };
 		711F7F9629F7E5800015A16C /* PlaceholderSceneToDeletePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7F8A29F7E5800015A16C /* PlaceholderSceneToDeletePresenter.swift */; };
 		711F7F9729F7E5800015A16C /* PlaceholderSceneToDeleteRouterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7F8B29F7E5800015A16C /* PlaceholderSceneToDeleteRouterContract.swift */; };
@@ -75,6 +76,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71101DD829FB69CA00016C13 /* Publisher + Subscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher + Subscriber.swift"; sourceTree = "<group>"; };
 		711F7F6B29F7D0420015A16C /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
 		711F7F8A29F7E5800015A16C /* PlaceholderSceneToDeletePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderSceneToDeletePresenter.swift; sourceTree = "<group>"; };
 		711F7F8B29F7E5800015A16C /* PlaceholderSceneToDeleteRouterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderSceneToDeleteRouterContract.swift; sourceTree = "<group>"; };
@@ -155,6 +157,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71101DD729FB69AF00016C13 /* Publisher + Subscriber */ = {
+			isa = PBXGroup;
+			children = (
+				71101DD829FB69CA00016C13 /* Publisher + Subscriber.swift */,
+			);
+			path = "Publisher + Subscriber";
+			sourceTree = "<group>";
+		};
 		711F7F6A29F7CF6A0015A16C /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,6 +360,7 @@
 		715F7D1529F77FEA0006B0EC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				71101DD729FB69AF00016C13 /* Publisher + Subscriber */,
 				711F7FC829F7FC270015A16C /* UIElements */,
 				711F7F8829F7DF7D0015A16C /* Providers */,
 				715F7D3B29F782DD0006B0EC /* SceneTransitions */,
@@ -726,6 +737,7 @@
 				715F7D4C29F79E0D0006B0EC /* AppUILayer.swift in Sources */,
 				715F7D1429F77E630006B0EC /* AppRouter.swift in Sources */,
 				711F7FB329F7E7CB0015A16C /* MainSceneInteractor.swift in Sources */,
+				71101DD929FB69CA00016C13 /* Publisher + Subscriber.swift in Sources */,
 				711F7FB629F7E7CB0015A16C /* MainSceneViewModel.swift in Sources */,
 				7138E5B329F8C90C000C4F3A /* CaptureViewType.swift in Sources */,
 				715F7D4A29F79DF10006B0EC /* AppDataLayerType.swift in Sources */,
