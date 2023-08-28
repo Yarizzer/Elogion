@@ -8,7 +8,7 @@
 import AVFoundation
 
 protocol CaptureViewModelType {
-    var titleValue: String { get }
-    
-    func updatePrediction(for image: CVPixelBuffer)
+  var titleValue: String { get }
+  
+  func updatePrediction(for image: CVPixelBuffer)
 }

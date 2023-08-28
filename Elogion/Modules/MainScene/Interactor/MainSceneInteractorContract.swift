@@ -7,13 +7,13 @@
 //
 
 protocol MainSceneInteractable {
-	func makeRequest(requestType: MainSceneInteractorRequest.RequestType)
+  func makeRequest(requestType: MainSceneInteractorRequest.RequestType)
 }
 
 struct MainSceneInteractorRequest {
-	enum RequestType {
-		case initialSetup
-        case viewIsReady
-        case viewWillDisappear
-	}
+  enum RequestType {
+    case initialSetup
+    case viewIsReady
+    case viewWillDisappear
+  }
 }

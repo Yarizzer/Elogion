@@ -7,32 +7,32 @@
 //
 
 protocol MainSceneViewModelType {
-    //Subscription
-    func setupSubscription()
-    //Publisher
-    var dataDidChanged: Publisher<Bool?> { get }
-    
-    func getCaptureViewModel() -> CaptureViewModelType
+  //Subscription
+  func setupSubscription()
+  //Publisher
+  var dataDidChanged: Publisher<Bool?> { get }
+  
+  func getCaptureViewModel() -> CaptureViewModelType
 }
 
 class MainSceneViewModel {
-    //Subscription
-    func setupSubscription() {
-        AppCore.shared.aiLayer.data.subscribe(self) { [weak self] data in
-            self?.data = data.newValue
-        }
+  //Subscription
+  func setupSubscription() {
+    AppCore.shared.aiLayer.data.subscribe(self) { [weak self] data in
+      self?.data = data.newValue
     }
-    
-    //Publisher
-    var dataDidChanged: Publisher<Bool?> = Publisher(nil)
-    
-    private var data: String? {
-        didSet {
-            dataDidChanged.value = true
-        }
+  }
+  
+  //Publisher
+  var dataDidChanged: Publisher<Bool?> = Publisher(nil)
+  
+  private var data: String? {
+    didSet {
+      dataDidChanged.value = true
     }
+  }
 }
 
 extension MainSceneViewModel: MainSceneViewModelType {
-    func getCaptureViewModel() -> CaptureViewModelType { CaptureViewModel() }
+  func getCaptureViewModel() -> CaptureViewModelType { CaptureViewModel() }
 }

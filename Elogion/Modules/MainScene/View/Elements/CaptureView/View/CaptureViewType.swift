@@ -6,6 +6,6 @@
 //
 
 protocol CaptureViewType {
-    func awakeSession()
-    func sleepSession()
+  func awakeSession()
+  func sleepSession()
 }

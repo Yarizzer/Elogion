@@ -7,12 +7,12 @@
 //
 
 protocol InitialSceneInteractable {
-	func makeRequest(requestType: InitialSceneInteractorRequest.RequestType)
+  func makeRequest(requestType: InitialSceneInteractorRequest.RequestType)
 }
 
 struct InitialSceneInteractorRequest {
-	enum RequestType {
-		case initialSetup
-        case routeToTabBarController
-	}
+  enum RequestType {
+    case initialSetup
+    case routeToTabBarController
+  }
 }
