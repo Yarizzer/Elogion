@@ -107,8 +107,6 @@ class CaptureView: UIView {
     private var session: AVCaptureSession?
     private var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     private var label: UILabel?
-    #warning("remove if not needed")
-    //private var pickerView: UIPickerView?
 }
 
 extension CaptureView: CaptureViewType {
@@ -128,16 +126,6 @@ extension CaptureView: CaptureViewType {
         }
     }
 }
-
-//extension CaptureView: AVCapturePhotoCaptureDelegate {
-//    func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
-//        let imageData = photo.fileDataRepresentation()
-//
-//        guard let data = imageData, let image = UIImage(data: data) else { return }
-//
-//        pickedImage.value = image
-//    }
-//}
 
 extension CaptureView: AVCaptureVideoDataOutputSampleBufferDelegate {
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
@@ -191,11 +179,7 @@ extension CaptureView: AVCaptureVideoDataOutputSampleBufferDelegate {
         
         CVPixelBufferUnlockBaseAddress(pixelBuffer, CVPixelBufferLockFlags(rawValue: 0))
         
-        guard let output = viewModel?.getPrediction(image: pixelBuffer) else { return }
-        
-        DispatchQueue.main.async {
-            print(output)
-        }
+        viewModel?.updatePrediction(for: pixelBuffer)
     }
 }
 

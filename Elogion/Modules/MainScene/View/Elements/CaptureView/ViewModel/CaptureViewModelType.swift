@@ -6,10 +6,9 @@
 //
 
 import AVFoundation
-import CoreML
 
 protocol CaptureViewModelType {
     var titleValue: String { get }
     
-    func getPrediction(image buffer: CVPixelBuffer) -> String?
+    func updatePrediction(for image: CVPixelBuffer)
 }

@@ -16,15 +16,11 @@ class CaptureViewModel {
 }
 
 extension CaptureViewModel: CaptureViewModelType {
-    
     var titleValue: String { Constants.labelValue }
     
-    func getPrediction(image buffer: CVPixelBuffer) -> String? {
-        guard let mlModel else { return nil }
-        
-        return try? mlModel.prediction(image: buffer).classLabel
-    }
-}
+    func updatePrediction(for image: CVPixelBuffer) {
+        AppCore.shared.aiLayer.updatePrediction(for: image)
+    }}
 
 extension CaptureViewModel {
     private struct Constants {
