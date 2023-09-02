@@ -5,7 +5,7 @@
 //  Created by Yaroslav Abaturov on 25.04.2023.
 //
 
-protocol AppUILayerType {
+protocol AppUILayerType: AnyObject {
     var style: AppUILayerStyleServiceType { get }
     var device: AppUILayerDeviceServiceType { get }
 }
