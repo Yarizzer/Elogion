@@ -11,7 +11,7 @@ enum FeedbackType {
     case success, failure
 }
 
-protocol AppUILayerDeviceServiceType {
+protocol AppUILayerDeviceServiceType: AnyObject {
     var screenSize: CGRect { get }
     var topPaddingValue: CGFloat { get }
     var bottomPaddingValue: CGFloat { get }
