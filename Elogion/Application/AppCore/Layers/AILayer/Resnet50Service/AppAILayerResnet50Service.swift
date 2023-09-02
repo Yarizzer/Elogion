@@ -7,19 +7,8 @@
 
 import CoreML
 
-protocol AppAILayerResnet50ServiceType {
-    
-}
+protocol AppAILayerResnet50ServiceType: AnyObject { }
 
-class AppAILayerResnet50Service {
-//    init() {
-//        let defaultConf = MLModelConfiguration()
-//        self.model = Resnet50(configuration: defaultConf)
-//    }
-//
-//    private let model: Resnet50
-}
+class AppAILayerResnet50Service { }
 
-extension AppAILayerResnet50Service: AppAILayerResnet50ServiceType {
-    
-}
+extension AppAILayerResnet50Service: AppAILayerResnet50ServiceType { }
