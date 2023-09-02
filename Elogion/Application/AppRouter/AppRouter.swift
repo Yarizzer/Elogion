@@ -8,22 +8,21 @@
 import UIKit
 
 protocol AppRoutable {
-    func routeToInitialScene()
+  func routeToInitialScene()
 }
 
 class AppRouter {
-    init() {
-        let window = UIWindow(frame: UIScreen.main.bounds)
-        window.backgroundColor = .systemBackground
-        self.window = window
-    }
-    
-    private var window: UIWindow
+  init() {
+    self.window = UIWindow(frame: UIScreen.main.bounds)
+    window.backgroundColor = .systemBackground
+  }
+  
+  private var window: UIWindow
 }
 
 extension AppRouter: AppRoutable {
-    func routeToInitialScene() {
-        window.rootViewController = InitialSceneRouter.assembly()
-        window.makeKeyAndVisible()
-    }
+  func routeToInitialScene() {
+    window.rootViewController = InitialSceneRouter.assembly()
+    window.makeKeyAndVisible()
+  }
 }
