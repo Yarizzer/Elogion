@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol AppUILayerStyleServiceType {
+protocol AppUILayerStyleServiceType: AnyObject {
     //Colors
     var colorClear: UIColor { get }
     var colorWhite: UIColor { get }
