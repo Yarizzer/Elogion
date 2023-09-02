@@ -5,16 +5,8 @@
 //  Created by Yaroslav Abaturov on 26.04.2023.
 //
 
-protocol ObjectPredictable {
-    
-}
+protocol ObjectPredictable: AnyObject { }
 
-class ObjectPredictor {
-    
-    
-//    func prediction
-}
+class ObjectPredictor { }
 
-extension ObjectPredictor: ObjectPredictable {
-    
-}
+extension ObjectPredictor: ObjectPredictable { }
