@@ -7,7 +7,7 @@
 
 import CoreML
 
-protocol AppAILayerType {
+protocol AppAILayerType: AnyObject {
     //Publishers
     var data: Publisher<String?> { get }
     
