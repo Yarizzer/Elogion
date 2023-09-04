@@ -5,14 +5,14 @@
 //  Created by Yaroslav Abaturov on 25.04.2023.
 //
 
-protocol AppCoreDataLayerType {
+protocol AppCoreDataLayerType: AnyObject {
     var dataLayer: AppDataLayerType { get }
 }
 
-protocol AppCoreUILayerType {
+protocol AppCoreUILayerType: AnyObject {
     var uiLayer: AppUILayerType { get }
 }
 
-protocol AppCoreAILayerType {
+protocol AppCoreAILayerType: AnyObject {
     var aiLayer: AppAILayerType { get }
 }
