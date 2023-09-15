@@ -19,7 +19,7 @@ extension TabBarRouter: TabBarRoutable {
     static func assembly() -> UITabBarController {
         let router = TabBarRouter()
         
-#warning("remove when ready other scenes")
+        #warning("remove when ready other scenes")
         let leftVC = configureVC(vc: PlaceholderSceneToDeleteRouter.assembly(), tabBarItemData: Constants.placeholderData)
         let mainVC = configureVC(vc: MainSceneRouter.assembly(), tabBarItemData: Constants.mainSceneData)
         let rightVC = configureVC(vc: PlaceholderSceneToDeleteRouter.assembly(), tabBarItemData: Constants.placeholderData)
