@@ -6,7 +6,7 @@
 //  Copyright (c) 2023 Yaroslav Abaturov. All rights reserved.
 //
 
-protocol MainScenePresentable {
+protocol MainScenePresentable: AnyObject {
   func response(responseType: MainScenePresenterResponse.MainSceneResponseType)
 }
 
