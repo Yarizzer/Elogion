@@ -6,7 +6,7 @@
 //  Copyright (c) 2023 Yaroslav Abaturov. All rights reserved.
 //
 
-protocol MainSceneInteractable {
+protocol MainSceneInteractable: AnyObject {
   func makeRequest(requestType: MainSceneInteractorRequest.RequestType)
 }
 
