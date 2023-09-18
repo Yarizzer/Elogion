@@ -11,13 +11,13 @@ import AVFoundation
 class AppUILayerDeviceService: AppUILayerDeviceServiceType {
     var screenSize: CGRect { UIScreen.main.bounds }
     var topPaddingValue: CGFloat {
-        guard (UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.safeAreaInsets.top ?? 0) > 24 else { return Constants.paddingValues.top.withoutNotch }
+        guard (UIApplication.shared.keyWindow?.safeAreaInsets.top ?? 0.0) > 24 else { return Constants.paddingValues.top.withoutNotch }
             
         return Constants.paddingValues.top.withNotch
     }
     
     var bottomPaddingValue: CGFloat {
-        guard (UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.safeAreaInsets.bottom ?? 0) > 0 else { return Constants.paddingValues.bottom.withoutNotch }
+        guard (UIApplication.shared.keyWindow?.safeAreaInsets.top ?? 0.0) > 0 else { return Constants.paddingValues.bottom.withoutNotch }
         
         return Constants.paddingValues.bottom.withNotch
     }
