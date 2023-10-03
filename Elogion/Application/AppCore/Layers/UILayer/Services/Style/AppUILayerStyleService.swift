@@ -60,9 +60,13 @@ extension AppUILayerStyleService: AppUILayerStyleServiceType {
     var colorSoftPurple: UIColor { StyleColors.softPurple.color }
     var colorPurple: UIColor { StyleColors.purple.color }
     //Fonts
-    var labelTitleFontLarge: UIFont { Constants.fontLarge }
-    var labelTitleFontMedium: UIFont { Constants.fontMedium }
-    var labelTitleFontSmall: UIFont { Constants.fontSmall }
+    func font(for type: AppUILayerStyleServiceFontType, with style: UIFont.TextStyle) -> UIFont {
+        switch type {
+        case .sceneTitle:           return UIFontMetrics(forTextStyle: style).scaledFont(for: Constants.sceneTitleFont)
+        case .cellTitle:            return UIFontMetrics(forTextStyle: style).scaledFont(for: Constants.cellTitleFont)
+        case .cellDescription:      return UIFontMetrics(forTextStyle: style).scaledFont(for: Constants.cellDescriptionFont)
+        }
+    }
     //Layers
     var layerBorderWidth: CGFloat { Constants.layerWidth.border }
     var layerLineWidth: CGFloat { Constants.layerWidth.line }
@@ -70,9 +74,9 @@ extension AppUILayerStyleService: AppUILayerStyleServiceType {
 
 extension AppUILayerStyleService {
     private struct Constants {
-        static let fontLarge: UIFont = UIFont(name: "AppleSDGothicNeo-UltraLight", size: 20) ?? UIFont.systemFont(ofSize: 20)
-        static let fontMedium: UIFont = UIFont(name: "AppleSDGothicNeo-UltraLight", size: 15) ?? UIFont.systemFont(ofSize: 15)
-        static let fontSmall: UIFont = UIFont(name: "AppleSDGothicNeo-UltraLight", size: 12) ?? UIFont.systemFont(ofSize: 12)
+        static let sceneTitleFont: UIFont = UIFont(name: "AppleSDGothicNeo-UltraLight", size: 25.0) ?? UIFont.systemFont(ofSize: 25.0)
+        static let cellTitleFont: UIFont = UIFont(name: "AppleSDGothicNeo-UltraLight", size: 17.0) ?? UIFont.systemFont(ofSize: 17.0)
+        static let cellDescriptionFont: UIFont = UIFont(name: "AppleSDGothicNeo-UltraLight", size: 12.0) ?? UIFont.systemFont(ofSize: 12.0)
         static let layerWidth: (border: CGFloat, line: CGFloat) = (border: 1.0, line: 1.2)
     }
 }

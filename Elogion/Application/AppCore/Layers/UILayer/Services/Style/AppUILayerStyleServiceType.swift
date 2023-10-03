@@ -7,6 +7,10 @@
 
 import UIKit
 
+enum AppUILayerStyleServiceFontType {
+  case sceneTitle, cellTitle, cellDescription
+}
+
 protocol AppUILayerStyleServiceType: AnyObject {
     //Colors
     var colorClear: UIColor { get }
@@ -23,9 +27,10 @@ protocol AppUILayerStyleServiceType: AnyObject {
     var colorSoftPurple: UIColor { get }
     var colorPurple: UIColor { get }
     //Fonts
-    var labelTitleFontLarge: UIFont { get }
-    var labelTitleFontMedium: UIFont { get }
-    var labelTitleFontSmall: UIFont { get }
+    func font(for type: AppUILayerStyleServiceFontType, with style: UIFont.TextStyle) -> UIFont
+//    var labelTitleFontLarge: UIFont { get }
+//    var labelTitleFontMedium: UIFont { get }
+//    var labelTitleFontSmall: UIFont { get }
     //Buttons
     var layerBorderWidth: CGFloat { get }
     var layerLineWidth: CGFloat { get }
