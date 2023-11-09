@@ -7,7 +7,7 @@
 
 import CoreML
 
-class AppAILayer {
+final class AppAILayer {
     init() {
         self.mlModel = try? Resnet50(configuration: MLModelConfiguration())
     }
